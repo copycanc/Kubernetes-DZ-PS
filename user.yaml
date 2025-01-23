@@ -1,0 +1,30 @@
+user:
+  isAdmin: true
+  name: Иван
+  age: 25
+  job: Администратор
+  skill:
+    - name: Grafana
+      level: 5
+      description: |
+        Построение графиков в СМ Grafana
+        Формирование запросов PROMQL
+    - name: Docker
+      level: 3
+      description: |
+        Запуск контейнера
+        Просмотр логов контейнера
+        Выполнение команд внутри контейнера
+  residence: >
+    Россия
+    Хабаровск
+    ул. Есенина
+    дом 5
+    квартира 40
+  pets:
+    - name: Юкка
+      breed: Хаски
+      мяукает: no
+    - name:  Кевин
+      breed: Мейнкун
+      мяукает: yes
