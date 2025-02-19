@@ -22,7 +22,16 @@ spec:
               value: rmq
             - name: SEED_USER_PASSWORD
               value: rmq
+          volumeMounts:
+            - name:  rmq-data
+              mountPath: /var/lib/rabbitmq
+              subPath: rabbitmq
           resources:
             limits:
               cpu: "400m"
               memory: "500M"
+      volumes:
+        - name:  rmq-data
+          persistentVolumeClaim:
+            claimName: pvc-rmq
+          
